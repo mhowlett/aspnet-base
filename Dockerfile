@@ -34,7 +34,7 @@ RUN mkdir /root/.config \
     && echo "  <disabledPackageSources />" >> /root/.config/NuGet/NuGet.config \
     && echo "</configuration>" >> /root/.config/NuGet/NuGet.config
 
-ENV DNX_VERSION 1.0.0-beta7
+ENV DNX_VERSION 1.0.0-beta8
 ENV DNX_USER_HOME /opt/dnx
 
 RUN bash -c "curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_USER_HOME=$DNX_USER_HOME DNX_BRANCH=v$DNX_VERSION sh \
